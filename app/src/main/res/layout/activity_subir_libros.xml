@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8FFDB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Sube Tu Libro"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:fontFamily="monospace"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Nombre del libro:"
+            android:fontFamily="monospace"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/editTextNombreLibro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingresa el nombre del libro" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Fecha:"
+            android:fontFamily="monospace"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/editTextFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingresa la fecha"
+            android:inputType="date" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Descripción:"
+            android:fontFamily="monospace"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/editTextDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:hint="Ingresa la descripción"
+            android:inputType="textMultiLine"
+            android:lines="4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Archivo PDF:"
+            android:fontFamily="monospace"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/buttonSubirPDF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar archivo"
+            android:backgroundTint="#008F8C"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Sube una imagen:"
+            android:fontFamily="monospace"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/buttonSubirImagen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar imagen"
+            android:backgroundTint="#008F8C"/>
+
+        <Button
+            android:id="@+id/btnregresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REGRESAR"
+            android:backgroundTint="#008F8C"/>
+
+
+    </LinearLayout>
+</ScrollView>
